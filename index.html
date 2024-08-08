@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My purpose</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+        }
+         
+    .container {
+       width: 100%;
+       min-height: 100vh;
+       text-align: center;
+      background: #000000;
+      --gap: 5em;
+      --line: 1px;
+      --color: rgba(255, 255, 255, 0.2);
+      padding: 5rem 0;
+      background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+    background-size: var(--gap) var(--gap);
+    display: flex;
+        flex-wrap: wrap;
+    }
+
+    .h-container{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    h1{
+        font-size: x-large;
+        color:bisque;
+        font: 800;
+        text-align: center;
+    }
+
+     /* Estilo para el label */
+     label {
+            display: inline-block;
+            cursor: pointer;
+            /*position: relative;*/
+            padding-left: 30px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #999;
+        }
+
+        /* Ocultar el checkbox por defecto */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        /* Personalizar el checkbox */
+        label::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #000;
+            border-radius: 4px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Estilo cuando el checkbox está marcado */
+        input[type="checkbox"]:checked + label::before {
+            background-color: #000;
+        }
+
+        /* Tachar el texto cuando el checkbox está marcado */
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+            color: #999;
+        }
+        .dataContainer{
+            width: 100%;
+        }
+
+        h2{
+            text-align: center;
+            color:aliceblue;
+            margin-left: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <main class="container">
+
+
+        <section class="h-container"> <h1>MY PRIME AWAKENING</h1></section>
+
+        <section class="dataContainer">
+            <div>
+                <h2>Self accountability | every day</h2>
+                <input type="checkbox" id="option1" >
+                <label for="option1">Train</label><br>
+         
+                <input type="checkbox" id="option2">
+                <label for="option2">Meditate</label><br>
+        
+                <input type="checkbox" id="option3">
+                <label for="option3">Read the bible</label><br>
+         
+                <input type="checkbox" id="option4">
+                <label for="option4">Read</label><br>
+
+                <input type="checkbox" id="option4">
+                <label for="option4">Learn</label><br>
+            </div>
+
+            <div>
+                <h2>Promise</h2>
+            <input type="checkbox" id="option5">
+            <label for="option5">Be a JS Full Stack</label><br>
+         
+            <input type="checkbox" id="option6">
+            <label for="option6">Learn C# Back-End</label><br>
+        
+            <input type="checkbox" id="option7">
+            <label for="option7">Master creatives</label><br>
+         
+            <input type="checkbox" id="option8">
+            <label for="option8">Meta Ads</label><br>
+        
+            <input type="checkbox" id="option9">
+            <label for="option9">Tik Tok Ads</label><br>
+            
+            <input type="checkbox" id="option10">
+            <label for="option10">Make money with e-com</label><br>
+        
+            <input type="checkbox" id="option11">
+            <label for="option11">Make money with affiliate marketing</label><br>
+        
+            <input type="checkbox" id="option12">
+            <label for="option12">100k pr month with Periferia</label><br>
+        
+            <input type="checkbox" id="option13">
+            <label for="option13">Get strong back again</label><br>
+        
+            <input type="checkbox" id="option14">
+            <label for="option14">Master Hacking</label><br>
+
+            <input type="checkbox" id="option15">
+            <label for="option15">Buy that vehicle to Dad and u</label><br>
+
+            <input type="checkbox" id="option16">
+            <label for="option16">Buy mom beautiful things</label><br>
+
+            <input type="checkbox" id="option17">
+            <label for="option17">Travel with that woman</label><br>
+            </div>
+           
+        </section>
+
+        <section>
+            
+        </section>
+    </main>
+    
+</body>
+</html>
